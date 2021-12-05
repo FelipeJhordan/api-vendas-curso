@@ -1,10 +1,11 @@
 import AppError from '@shared/errors/AppError';
-import { Request, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 
 const interceptorError = (
   error: Error,
   request: Request,
   response: Response,
+  next: NextFunction,
 ) => {
   if (error instanceof AppError) {
     return response.status(error.statusCode).json({
