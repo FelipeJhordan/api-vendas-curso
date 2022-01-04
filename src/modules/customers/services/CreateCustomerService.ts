@@ -1,5 +1,5 @@
-import CustomerRepository from '../typeorm/repositories/CustomerRepository';
-import Customer from '../typeorm/entities/Customer';
+import CustomerRepository from '../infra/typeorm/repositories/CustomerRepository';
+import Customer from '../infra/typeorm/entities/Customer';
 import { getCustomRepository } from 'typeorm';
 
 interface IRequest {
