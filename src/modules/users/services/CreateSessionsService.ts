@@ -5,8 +5,8 @@ import { getCustomRepository } from 'typeorm';
 
 import authConfig from '@config/auth';
 
-import User from '../../typeorm/entities/User';
-import UsersRepository from '../../typeorm/repositories/UsersRepository';
+import User from '../infra/typeorm/entities/User';
+import UsersRepository from '../infra/typeorm/repositories/UsersRepository';
 
 interface IRequest {
   email: string;

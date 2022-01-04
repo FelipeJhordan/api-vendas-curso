@@ -6,9 +6,9 @@ import mailConfig from '@config/mail/mail';
 import { getCustomRepository } from 'typeorm';
 import path from 'path';
 
-import UserToken from '../../typeorm/entities/UserToken';
-import UsersRepository from '../../typeorm/repositories/UsersRepository';
-import UsersTokenRepository from '../../typeorm/repositories/UsersTokenRepository';
+import UserToken from '../infra/typeorm/entities/UserToken';
+import UsersRepository from '../infra/typeorm/repositories/UsersRepository';
+import UsersTokenRepository from '../infra/typeorm/repositories/UsersTokenRepository';
 
 interface IRequest {
   email: string;
